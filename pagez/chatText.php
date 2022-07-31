@@ -40,9 +40,6 @@ if($result->num_rows == 0){
 	$sql .= " where gebr_id = '".$row0['id']."' and room='".$_GET['board']."';";
 }
 
-echo $sql;
-
-/*
 $result3 = $conn->query($sql);
 
 $sql = "select * from cht where room = '".$_GET['board']."';"; // and time < 50min
@@ -62,5 +59,4 @@ while($row = $result4->fetch_assoc()){
 		echo "<span style='background-color:".$row5['color'].";'>O</span>".$row5['name']." has entered the lobby :)<br/>";
 	}
 }
-*/
 ?>
