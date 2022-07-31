@@ -55,7 +55,7 @@
 			}
 			#say{
 				position: absolute;
-				right: 0px;
+				right: 10px;
 			}
 			
 		</style>
