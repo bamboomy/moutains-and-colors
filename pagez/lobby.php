@@ -46,6 +46,7 @@
 				position: absolute;
 				bottom: 10px;
 				width:90%;
+				padding-top: 10px;
 				text-align: left;
 			}
 			#say{
