@@ -23,7 +23,7 @@
 			.inner {
 				margin-left: auto;
 				margin-right: auto;
-				width: 400px;
+				width: 500px;
 				text-align: left;
 			}
 			
