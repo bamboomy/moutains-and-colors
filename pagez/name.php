@@ -32,10 +32,6 @@
 				right: 50px;
 				bottom: 50px;
 			}
-			
-			#color{
-				margin: 5px;
-			}
 		</style>
 	</head>
 	<body>
