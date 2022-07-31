@@ -42,8 +42,7 @@
 					<div class="inner">
 						<form>
 <?php				
-							echo "You choose: ".$_POST['color'].":<br/>";
-							echo "<input type='color' id='color' value='".$_POST['color']."' disabled='disabled'>";
+							echo "You choose: <span style='background-color:".$_POST['color'].";'>".$_POST['color']."</span>:<br/>";
 							echo "<br/>";
 							echo "Looks like a pretty decent color, if I may say...";
 							echo "<br/>";
