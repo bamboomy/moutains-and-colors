@@ -47,7 +47,7 @@
 						If we'd extend our cookie policy we'd ask everyone again<br/>
 						which cookies they will allow in that case...
 						</p>
-						<form action='lobby.php' method='post'>
+						<form action='session.php' method='post'>
 <?php						
 							echo "<input type='hidden' name='color' value='".$_POST['color']."'/>";
 							echo "<input type='hidden' name='name' value='".$_POST['name']."'/>";

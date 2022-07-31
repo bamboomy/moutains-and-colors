@@ -1,32 +1,22 @@
 <?php
 
+session_start();
+
 include_once("settings.php");
 
-$sql = "select id from gebrkr where color = '".$_POST['color']."' and name = '".$_POST['name']."';";
+$sql = "select id from gebrkr where color = '".$_SESSION['color']."' and name = '".$_SESSION['name']."';";
 
 $result = $conn->query($sql);
 
 if ($result->num_rows == 0) {
 	
-	$sql = "insert into gebrkr (color, name) ";
-	$sql .= " values ('".$_POST['color']."', '".$_POST['name']."');";
-	
-	$result = $conn->query($sql);
-
-	$sql = "select id from gebrkr where color = '".$_POST['color']."' and name = '".$_POST['name']."';";
-
-	$result = $conn->query($sql);
+	die("can't be");
 }
 
 $row = $result->fetch_assoc();
 
-$sql = "insert into lobbycht (gebr_id, enters, leaves) ";
-$sql .= " values ('".$row['id']."', 'Y', 'N');";
-
-$result = $conn->query($sql);
-
-$sql = "insert into chatDirty (chat, id, boolean) ";
-$sql .= " values ('lobby', '".$row['id']."', 'Y');";
+$sql = "insert into cht (gebr_id, room, enters, leaves) ";
+$sql .= " values ('".$row['id']."', 'lobby', 'Y', 'N');";
 
 $result = $conn->query($sql);
 
@@ -100,6 +90,32 @@ $result = $conn->query($sql);
 			}
 			
 		</style>
+		<script>
+			function fillChat() {
+
+				$
+						.ajax({
+							type : "get",
+							xhrFields : {
+								withCredentials : true
+							},
+							url : 'http://3.249.16.111/pagez/chatText.php?board=lobby',
+							success : function(text) {
+
+								if (text != "clean") {
+
+									alert(text);
+/*
+									$('#chatText').html(text);
+
+									var objDiv = document.getElementById("chatText");
+									objDiv.scrollTop = objDiv.scrollHeight;
+									*/
+								}
+							}
+						});
+			}
+		</script>
 	</head>
 	<body>
 
