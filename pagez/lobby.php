@@ -44,6 +44,7 @@
 			#talk{
 				position: absolute;
 				bottom: 10px;
+				left: 10px;
 				width:100%;
 			}
 			#say{
