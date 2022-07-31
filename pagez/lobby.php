@@ -61,6 +61,9 @@
 				position: absolute;
 				right: 10px;
 			}
+			#chatTitle{
+				margin-left: 10px;
+			}
 			
 		</style>
 	</head>
@@ -79,7 +82,7 @@
 		</center>
 		
 		<div id='chat'>
-			<h3>Chat</h3>
+			<h3 id='chatTitle'>Chat</h3>
 			<div id="talk">
 				<input id='word' type='text' /><button id='say' type="submit" class="btn btn-primary">Say</button>
 			</div>
