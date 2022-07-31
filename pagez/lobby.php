@@ -45,7 +45,7 @@
 				position: absolute;
 				bottom: 10px;
 				left: 10px;
-				width:100%;
+				width:90%;
 			}
 			#say{
 				position: absolute;
