@@ -24,6 +24,7 @@
 				margin-left: auto;
 				margin-right: auto;
 				width: 400px;
+				text-align: left;
 			}
 			
 			#next{
