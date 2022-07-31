@@ -44,6 +44,7 @@
 			#talk{
 				position: absolute;
 				bottom: 0px;
+				width:300px;
 			}
 			
 		</style>
@@ -64,7 +65,7 @@
 		
 		<div id='chat'>
 			<h3>Chat</h3>
-			<input id='talk' type='text' />
+			<input id='talk' type='text' /><button id="say" type="submit" class="btn btn-primary">Say</button>
 		</div>
 		
 	</body>
