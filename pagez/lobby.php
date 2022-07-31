@@ -55,8 +55,7 @@
 			}
 			#word{
 				width:300px;
-				position: absolute;
-				left: 10px;
+				margin-left: 10px;
 			}
 			#say{
 				position: absolute;
