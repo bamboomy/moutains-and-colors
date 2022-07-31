@@ -40,18 +40,9 @@
 			<div class="outer">
 				<div class="middle">
 					<div class="inner">
-						<form action='cookie.php' method='post'>
-<?php				
-							echo "You choose: <span style='background-color:".$_POST['color'].";'>".$_POST['color']."</span> :)<br/>";
-							echo "Looks like a pretty decent color, if I may say...";
-							echo "<br/>";
-							echo "Next: (we're almost there), how would you like to be called?";
-							echo "<br/>";
-							echo "<input type='hidden' name='color' value='".$_POST['color']."'/>";
-?>
-							<input type="text" name="name"/>
-							<button id="next" type="submit" class="btn btn-primary">Next</button>
-						</form>
+						<h1>Play</h1>
+						<h1>Rules</h1>
+						<h1>Become a supporter</h1>
 					</div>
 				</div>
 			</div>
