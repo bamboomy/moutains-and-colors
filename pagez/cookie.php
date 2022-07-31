@@ -43,9 +43,9 @@
 						<h1>Care for a cookie?</h1>
 						<img src='../imgz/fortune_cookie.jpg' width='300px' height='300px' />
 						<p>For now we only use functional cookies<br/>
-						(so you need to accept (or not use the site))<br/>
+						(so you need to accept (or not use the site)).<br/>
 						If we'd extend our cookie policy we'd ask everyone again<br/>
-						which cookies they allow in that case...
+						which cookies they will allow in that case...
 						</p>
 							<button id="next" type="submit" class="btn btn-primary">Accept</button>
 						</form>
