@@ -32,6 +32,10 @@
 				right: 50px;
 				bottom: 50px;
 			}
+			
+			#color{
+				padding: 5px;
+			}
 		</style>
 	</head>
 	<body>
@@ -43,7 +47,7 @@
 						<form>
 <?php				
 							echo "You choose: ".$_POST['color'].":";
-							echo "<input type='color' value='".$_POST['color']."' disabled='disabled'>";
+							echo "<input type='color' id='color' value='".$_POST['color']."' disabled='disabled'>";
 							echo "<br/>";
 							echo "Looks like a pretty decent color, if I may say...";
 							echo "<br/>";
