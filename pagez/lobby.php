@@ -42,6 +42,7 @@
 			}
 			
 			#talk{
+				border-style: solid none none none;
 				position: absolute;
 				bottom: 10px;
 				left: 10px;
