@@ -109,6 +109,7 @@ $result = $conn->query($sql);
 					<div class="inner">
 						<h1>Play</h1>
 						<h1>Rules</h1>
+						<h1>Report a bug</h1>
 						<h1>Become a supporter</h1>
 					</div>
 				</div>
