@@ -50,6 +50,13 @@
 				position: absolute;
 				bottom: 0px;
 			}
+			#word{
+				width:300px;
+			}
+			#say{
+				position: absolute;
+				right: 0px;
+			}
 			
 		</style>
 	</head>
@@ -70,7 +77,7 @@
 		<div id='chat'>
 			<h3>Chat</h3>
 			<div id="talk">
-				<input type='text' /><button type="submit" class="btn btn-primary">Say</button>
+				<input id='word' type='text' /><button id='say' type="submit" class="btn btn-primary">Say</button>
 			</div>
 		</div>
 		
