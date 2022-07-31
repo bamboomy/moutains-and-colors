@@ -42,7 +42,7 @@
 					<div class="inner">
 						<form>
 <?php				
-							echo "You choose: <span style='background-color:".$_POST['color'].";'>".$_POST['color']."</span>:<br/>";
+							echo "You choose: <span style='background-color:".$_POST['color'].";'>".$_POST['color']."</span> :)<br/>";
 							echo "Looks like a pretty decent color, if I may say...";
 							echo "<br/>";
 							echo "Next: (we're almost there), how would you like to be called?";
