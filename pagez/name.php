@@ -40,7 +40,7 @@
 			<div class="outer">
 				<div class="middle">
 					<div class="inner">
-						<form>
+						<form action='cookie.php' method='post'>
 <?php				
 							echo "You choose: <span style='background-color:".$_POST['color'].";'>".$_POST['color']."</span> :)<br/>";
 							echo "Looks like a pretty decent color, if I may say...";
