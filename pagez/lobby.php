@@ -32,6 +32,14 @@
 				right: 50px;
 				bottom: 50px;
 			}
+			
+			#chat{
+				width:100px;
+				border-style: none none none solid;
+				position: absolute;
+				right:0px;
+			}
+			
 		</style>
 	</head>
 	<body>
@@ -47,5 +55,10 @@
 				</div>
 			</div>
 		</center>
+		
+		<div id='chat'>
+			<h3>Chat</h3>
+		</div>
+		
 	</body>
 </html>
