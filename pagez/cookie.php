@@ -41,7 +41,7 @@
 				<div class="middle">
 					<div class="inner">
 						<h1>Care for a cookie?</h1>
-						<img src='../imgz/fortune_cookie.jpg' width='50px' height='50px' />
+						<img src='../imgz/fortune_cookie.jpg' width='300px' height='300px' />
 					
 							<button id="next" type="submit" class="btn btn-primary">Next</button>
 						</form>
