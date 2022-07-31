@@ -8,7 +8,7 @@ $sql = "select id from gebrkr where color = '".$_SESSION['color']."' and name = 
 
 $result = $conn->query($sql);
 
-$row = $result->fetch_assoc();
+$row0 = $result->fetch_assoc();
 
 $sql = "select dt_read from cht_rd where gebr_id = '".$row['id']."' and room = '".$_GET['board']."';";
 
@@ -32,12 +32,12 @@ if($result->num_rows != 0 && $row2['max(dt_add)'] < $row['dt_read']){
 if($result->num_rows == 0){
 	
 	$sql = "insert into cht_rd(gebr_id, room)";
-	$sql .= " values ('".$row['id']."', '".$_GET['board']."');";
+	$sql .= " values ('".$row0['id']."', '".$_GET['board']."');";
 
 } else {
 
 	$sql = "update cht_rd set dt_read = now()";
-	$sql .= " where gebr_id = '".$row['id']."' and room='".$_GET['board']."';";
+	$sql .= " where gebr_id = '".$row0['id']."' and room='".$_GET['board']."';";
 }
 
 echo $sql;
