@@ -37,7 +37,7 @@ if($result->num_rows == 0){
 } else {
 
 	$sql = "update cht_rd set dt_read = now()";
-	$sql .= " where gebr_id = '".$row['id']."' and room=".$_GET['board'].";";
+	$sql .= " where gebr_id = '".$row['id']."' and room='".$_GET['board']."';";
 }
 
 $result3 = $conn->query($sql);
