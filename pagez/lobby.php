@@ -48,6 +48,7 @@
 				bottom: 10px;
 				left: 10px;
 				width:90%;
+				text-align: left;
 			}
 			#say{
 				position: absolute;
