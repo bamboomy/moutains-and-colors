@@ -1,3 +1,37 @@
+<?php
+
+include_once("settings.php");
+
+$sql = "select id from gebrkr where color = '".$_POST['color']."' and name = '".$_POST['name']."';";
+
+$result = $conn->query($sql);
+
+if ($result->num_rows == 0) {
+	
+	$sql = "insert into gebrkr (color, name) ";
+	$sql .= " values ('".$_POST['color']."', '".$_POST['name']."');";
+	
+	$result = $conn->query($sql);
+
+	$sql = "select id from gebrkr where color = '".$_POST['color']."' and name = '".$_POST['name']."';";
+
+	$result = $conn->query($sql);
+}
+
+$row = $result->fetch_assoc();
+
+$sql = "insert into lobbycht (gebr_id, enters, leaves) ";
+$sql .= " values ('".$row['id']."', 'Y', 'N');";
+
+$result = $conn->query($sql);
+
+$sql = "insert into chatDirty (chat, id, boolean) ";
+$sql .= " values ('lobby', '".$row['id']."', 'Y');";
+
+$result = $conn->query($sql);
+
+?>
+
 <html>
 	<head>
 		<script src="frameworkz/js/jquery-3.6.0.min.js"></script>
