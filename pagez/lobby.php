@@ -41,6 +41,10 @@
 				height: 100%;
 			}
 			
+			#talk{
+				bottom: 0px;
+			}
+			
 		</style>
 	</head>
 	<body>
@@ -59,6 +63,7 @@
 		
 		<div id='chat'>
 			<h3>Chat</h3>
+			<input id='talk' type='text' />
 		</div>
 		
 	</body>
