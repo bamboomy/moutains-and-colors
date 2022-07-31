@@ -1,6 +1,3 @@
-<?php
-	echo $_POST['color'];
-?>
 <html>
 	<head>
 		<style>
@@ -24,6 +21,12 @@
 				margin-right: auto;
 				width: 400px;
 			}
+			
+			#next{
+				position: absolute;
+				right: 50px;
+				bottom: 50px;
+			}
 		</style>
 	</head>
 	<body>
@@ -32,15 +35,19 @@
 			<div class="outer">
 				<div class="middle">
 					<div class="inner">
+						<form>
 <?php				
-						echo "You choose: ".$_POST['color'].":<br/>";
-						echo "<input type='color' value='".$_POST['color']."' disabled='disabled'>";
-						echo "<br/>";
-						echo "Looks like a pretty decent color, if I may say...";
-						echo "<br/>";
-						echo "Next: (we're almost there), how would you like to be called?";
-						echo "<br/>";
+							echo "You choose: ".$_POST['color'].":";
+							echo "<input type='color' value='".$_POST['color']."' disabled='disabled'>";
+							echo "<br/>";
+							echo "Looks like a pretty decent color, if I may say...";
+							echo "<br/>";
+							echo "Next: (we're almost there), how would you like to be called?";
+							echo "<br/>";
 ?>
+							<input type="text" name="name"/>
+							<button id="next" type="submit" class="btn btn-primary">Next</button>
+						</form>
 					</div>
 				</div>
 			</div>
