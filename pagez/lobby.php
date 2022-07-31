@@ -38,6 +38,7 @@
 				border-style: none none none solid;
 				position: absolute;
 				right:0px;
+				height: 100%;
 			}
 			
 		</style>
