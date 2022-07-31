@@ -34,7 +34,7 @@
 			}
 			
 			#chat{
-				width:100px;
+				width:500px;
 				border-style: none none none solid;
 				position: absolute;
 				right:0px;
