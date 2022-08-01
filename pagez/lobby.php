@@ -111,6 +111,8 @@ $result = $conn->query($sql);
 							}
 						});
 			}
+			
+			fillChat();
 		</script>
 	</head>
 	<body>
