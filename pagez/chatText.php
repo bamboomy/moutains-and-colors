@@ -10,7 +10,7 @@ $result = $conn->query($sql);
 
 $row0 = $result->fetch_assoc();
 
-$sql = "select dt_read from cht_rd where gebr_id = '".$row['id']."' and room = '".$_GET['board']."';";
+$sql = "select dt_read from cht_rd where gebr_id = '".$row0['id']."' and room = '".$_GET['board']."';";
 
 $result = $conn->query($sql);
 
