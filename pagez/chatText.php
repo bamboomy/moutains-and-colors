@@ -60,7 +60,7 @@ while($row = $result4->fetch_assoc()){
 		
 	} else {
 		
-		echo "<span style='background-color:".$row5['color'].";'>^L^</span><span style='text-decoration: underline;'>".$row5['name']."</span>: ".$row['message']."<br/>";
+		echo "<span style='background-color:".$row5['color'].";'>^L^</span><span style='text-decoration: underline;'>".$row5['name'].":</span> ".$row['message']."<br/>";
 	}
 }
 ?>
