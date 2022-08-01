@@ -11,7 +11,7 @@ $result = $conn->query($sql);
 $row0 = $result->fetch_assoc();
 
 $sql = "insert into cht(gebr_id, room, enters, leaves, message)";
-$sql .= " values ('".$row0['id']."', '".$_GET['board']."', 'N', 'N', '".$_POST['text']."');"
+$sql .= " values ('".$row0['id']."', '".$_GET['board']."', 'N', 'N', '".test_input($_POST['text'])."');";
 
 $result = $conn->query($sql);
 ?>
