@@ -22,6 +22,9 @@ $result2 = $conn->query($sql);
 
 $row2 = $result2->fetch_assoc();
 
+echo $row2['max(dt_add)'];
+echo $row['dt_read'];
+
 if($result->num_rows != 0 && $row2['max(dt_add)'] < $row['dt_read']){
 	
 	echo "clean";
