@@ -42,7 +42,7 @@ if($result->num_rows == 0){
 
 $result3 = $conn->query($sql);
 
-$sql = "select * from cht where room = '".$_GET['board']."' and dt_add <= date_sub(now(), INTERVAL 1 hour);"; // and time < 50min
+$sql = "select * from cht where room = '".$_GET['board']."' and dt_add > date_sub(now(), INTERVAL 1 hour);"; // and time < 50min
 
 $result4 = $conn->query($sql);
 
