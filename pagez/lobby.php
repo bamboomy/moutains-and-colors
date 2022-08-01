@@ -127,7 +127,7 @@ $result = $conn->query($sql);
 			
 			function sendMessage() {
 		
-		<?
+		<?php
 				echo "var chat = '".$_SESSION['name']." :' + $('#word').val();\n\n";
 		?>				 
 		
