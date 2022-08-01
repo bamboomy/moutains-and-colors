@@ -112,7 +112,19 @@ $result = $conn->query($sql);
 						});
 			}
 			
-			fillChat();
+			function showChat() {
+
+				setTimeout(function() {
+
+					fillChat();
+
+					showChat();
+
+				}, 1000);
+			}
+
+			showChat();
+	
 		</script>
 	</head>
 	<body>
