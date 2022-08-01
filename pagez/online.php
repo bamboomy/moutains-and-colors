@@ -16,6 +16,6 @@ while($row = $result->fetch_assoc()){
 	
 	$row2 = $result2->fetch_assoc();
 	
-	echo "<span style='background-color:".$row2['color'].";'>^L^</span> <span style='text-decoration: underline;'>".$row2['name'].":</span><br/>";
+	echo "<span style='background-color:".$row2['color'].";'>^L^</span> <span style='text-decoration: underline;'>".$row2['name']."</span><br/>";
 }
 ?>
