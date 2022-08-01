@@ -98,6 +98,29 @@ $result = $conn->query($sql);
 
 		</style>
 		<script>
+
+			function updateOnline() {
+
+				$
+						.ajax({
+							type : "get",
+							xhrFields : {
+								withCredentials : true
+							},
+							url : 'http://3.249.16.111/pagez/online.php?board=lobby',
+							success : function(text) {
+
+								if (text != "clean") {
+
+									$('#users').html(text);
+
+									var objDiv = document.getElementById("chatText");
+									objDiv.scrollTop = objDiv.scrollHeight;
+								}
+							}
+						});
+			}
+		
 			function fillChat() {
 
 				$
@@ -120,18 +143,20 @@ $result = $conn->query($sql);
 						});
 			}
 			
-			function showChat() {
+			function refresh() {
 
 				setTimeout(function() {
 
 					fillChat();
+					
+					updateOnline();
 
-					showChat();
+					refresh();
 
 				}, 1000);
 			}
 
-			showChat();
+			refresh();
 			
 			function sendMessage() {
 		
