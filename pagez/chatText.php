@@ -56,7 +56,7 @@ while($row = $result4->fetch_assoc()){
 		
 		$row5 = $result5->fetch_assoc();
 		
-		echo "<span style='background-color:".$row5['color'].";'>O</span>".$row5['name']." has entered the lobby :)<br/>";
+		echo "<span style='background-color:".$row5['color'].";'>O</span> ".$row5['name']." has entered the lobby :)<br/>";
 	}
 }
 ?>
