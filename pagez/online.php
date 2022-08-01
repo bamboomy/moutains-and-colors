@@ -4,7 +4,7 @@ session_start();
 
 include_once("settings.php");
 
-$sql = "select gebr_id from cht_rd where dt_read > date_sub(now(), INTERVAL 1 MINUTE) and room = '".$_GET['board']."';";
+$sql = "select gebr_id from cht_rd where dt_read > date_sub(now(), INTERVAL 40 SECOND) and room = '".$_GET['board']."';";
 
 $result = $conn->query($sql);
 
