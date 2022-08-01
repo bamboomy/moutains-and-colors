@@ -12,9 +12,9 @@ while($row = $result->fetch_assoc()){
 
 	$sql = "select * from gebrkr where id = '".$row['gebr_id']."';"; 
 	
-	$result = $conn->query($sql);
+	$result2 = $conn->query($sql);
 	
-	$row2 = $result->fetch_assoc();
+	$row2 = $result2->fetch_assoc();
 	
 	echo "<span style='background-color:".$row2['color'].";'>^L^</span> <span style='text-decoration: underline;'>".$row2['name'].":</span><br/>";
 }
