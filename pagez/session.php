@@ -4,8 +4,8 @@ session_start();
 
 include_once("settings.php");
 
-$sql = "insert into gebrkr (color, name) ";
-$sql .= " values ('".$_POST['color']."', '".$_POST['name']."');";
+$sql = "insert into gebrkr (color, name, hash) ";
+$sql .= " values ('".$_POST['color']."', '".$_POST['name']."', '".md5(random_bytes(20))."');";
 
 $result = $conn->query($sql);
 
