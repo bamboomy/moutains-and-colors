@@ -132,8 +132,8 @@ $result = $conn->query($sql);
 		
 		<div id='chat'>
 			<h3 id='chatTitle'>Chat</h3>
+			<div id='chatText'></div>
 			<div id="talk">
-				<div id='chatText'></div>
 				<input id='word' type='text' /><button id='say' type="submit" class="btn btn-primary">Say</button>
 			</div>
 		</div>
