@@ -92,7 +92,7 @@ $result = $conn->query($sql);
 				width:300px;
 				border-style: none solid none none;
 				position: absolute;
-				left:0px;
+				left:5px;
 				height: 100%;
 			}
 
