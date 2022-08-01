@@ -1,0 +1,41 @@
+div#buttonz {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+p {
+	font-size: 250%;
+}
+
+div#status {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border-style: solid;
+	min-height: 100px;
+	min-width: 200px;
+	padding: 20px;
+}
+
+p#statusText {
+	margin: 20px;
+}
+
+.place {
+	position: relative;
+	display: inline;
+}
+
+.place .data {
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+
+.place .count{
+	position: absolute;
+	left: 0;
+	z-index: 2;
+	opacity: 0.5;
+}

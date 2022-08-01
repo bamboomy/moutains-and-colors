@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../js/main_vars.js"></script>
+		<script type="text/javascript" src="../js/aid.js"></script>
+		<script type="text/javascript" src="../js/render.js"></script>
+		<script type="text/javascript" src="../js/boardEngine.js"></script>
+		<script type="text/javascript" src="../js/prepare.js"></script>
+		<script type="text/javascript" src="../js/gameEngine.js"></script>
+		<script type="text/javascript" src="../js/scoring.js"></script>
+		<script type="text/javascript" src="../js/bot.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<style>
+			.outer {
+				display: table;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+			.middle {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.inner {
+				margin-left: auto;
+				margin-right: auto;
+				width: 700px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div class="outer">
+				<div class="middle">
+					<div class="inner">
+
+						<script type="text/javascript">
+							for (var row=0 ; row<height ; row++){
+								document.write("<div id='"+row+"'></div>");
+							}			
+
+							init();
+						</script>
+					</div>
+				</div>
+			</div>
+		</center>
+		<div id="status">
+		<p>
+		turn: <img id="turn" src="../imgz/red.png" />
+		</p>
+		</div>
+		<div id="buttonz">
+			<p><img src="../imgz/red.png" /><span id="redInfo">7 Left</span></p>
+			<p><img src="../imgz/yellow.png" /><span id="yellowInfo">7 Left</span></p>
+			<img id="random" src="../imgz/random.jpg" onclick="putRandom();" />
+		</div>
+	</body>
+</html>
