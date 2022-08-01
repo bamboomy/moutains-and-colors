@@ -193,11 +193,8 @@ $result = $conn->query($sql);
 		</div>
 
 		<div id='online'>
-			<h3 id='chatTitle'>Chat</h3>
-			<div id='chatText'></div>
-			<div id="talk">
-				<input id='word' type='text' /><button id='say' onclick='sendMessage();' class="btn btn-primary">Say</button>
-			</div>
+			<h3 id='onlineTitle'>Online</h3>
+			<div id='users'></div>
 		</div>
 		
 	</body>
