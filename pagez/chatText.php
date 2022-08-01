@@ -22,13 +22,6 @@ $result2 = $conn->query($sql);
 
 $row2 = $result2->fetch_assoc();
 
-if($result->num_rows != 0 && $row2['max(dt_add)'] < $row['dt_read']){
-	
-	echo "clean";
-	
-	exit;
-}
-
 if($result->num_rows == 0){
 	
 	$sql = "insert into cht_rd(gebr_id, room)";
@@ -41,6 +34,13 @@ if($result->num_rows == 0){
 }
 
 $result3 = $conn->query($sql);
+
+if($result->num_rows != 0 && $row2['max(dt_add)'] < $row['dt_read']){
+	
+	echo "clean";
+	
+	exit;
+}
 
 $sql = "select * from cht where room = '".$_GET['board']."' and dt_add > date_sub(now(), INTERVAL 1 hour);"; // and time < 50min
 
