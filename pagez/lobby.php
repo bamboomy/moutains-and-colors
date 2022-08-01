@@ -201,6 +201,7 @@ $result = $conn->query($sql);
 				<div class="middle">
 					<div class="inner">
 						<h1>Play</h1>
+						<h1>See an old game</h1>
 						<h1>Rules</h1>
 						<h1>Report a bug</h1>
 						<h1>Become a supporter</h1>
