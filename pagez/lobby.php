@@ -72,22 +72,30 @@ $result = $conn->query($sql);
 				padding-top: 10px;
 				text-align: left;
 			}
+
 			#say{
 				position: absolute;
 				bottom: 0px;
+				right: 10px;
 			}
+
 			#word{
 				width:300px;
 				margin-left: 10px;
 			}
-			#say{
-				position: absolute;
-				right: 10px;
-			}
+
 			#chatTitle{
 				margin-left: 10px;
 			}
-			
+
+			#online{
+				width:300px;
+				border-style: none solid none none;
+				position: absolute;
+				left:0px;
+				height: 100%;
+			}
+
 		</style>
 		<script>
 			function fillChat() {
@@ -177,6 +185,14 @@ $result = $conn->query($sql);
 		</center>
 		
 		<div id='chat'>
+			<h3 id='chatTitle'>Chat</h3>
+			<div id='chatText'></div>
+			<div id="talk">
+				<input id='word' type='text' /><button id='say' onclick='sendMessage();' class="btn btn-primary">Say</button>
+			</div>
+		</div>
+
+		<div id='online'>
 			<h3 id='chatTitle'>Chat</h3>
 			<div id='chatText'></div>
 			<div id="talk">
