@@ -4,8 +4,10 @@ session_start();
 
 include_once("settings.php");
 
+$_SESSION['hash']=md5(random_bytes(20));
+
 $sql = "insert into gebrkr (color, name, hash) ";
-$sql .= " values ('".$_POST['color']."', '".$_POST['name']."', '".md5(random_bytes(20))."');";
+$sql .= " values ('".$_POST['color']."', '".$_POST['name']."', '".$_SESSION['hash']."');";
 
 $result = $conn->query($sql);
 

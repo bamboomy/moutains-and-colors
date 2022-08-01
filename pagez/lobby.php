@@ -124,6 +124,42 @@ $result = $conn->query($sql);
 			}
 
 			showChat();
+			
+			function sendMessage() {
+		
+		<?
+				echo "var chat = '".$_SESSION['name']." :' + $('#word').val();\n\n";
+		?>				 
+		
+				$('#word').val("");
+
+				$
+						.ajax({
+							type : "POST",
+							xhrFields : {
+								withCredentials : true
+							},
+							url : 'http://3.249.16.111/pagez/sendChat.php?board=lobby',
+							data : {
+								text : chat
+							},
+							success : function(text) {
+
+								fillChat();
+							}
+						});
+			}
+			
+			$(document).ready(function() {
+
+				$('#word').on('keydown', function(e) {
+
+					if (e.which == 13) {
+
+						sendMessage();
+					}
+				});
+			});
 	
 		</script>
 	</head>
@@ -146,7 +182,7 @@ $result = $conn->query($sql);
 			<h3 id='chatTitle'>Chat</h3>
 			<div id='chatText'></div>
 			<div id="talk">
-				<input id='word' type='text' /><button id='say' type="submit" class="btn btn-primary">Say</button>
+				<input id='word' type='text' /><button id='say' onclick='sendMessage();' class="btn btn-primary">Say</button>
 			</div>
 		</div>
 		
