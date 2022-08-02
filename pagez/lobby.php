@@ -21,7 +21,7 @@ $sql .= " values ('".$row['id']."', 'lobby', 'Y', 'N');";
 $result = $conn->query($sql);
 
 ?>
-
+<!DOCTYPE html>
 <html>
 	<head>
 		<script src="../frameworkz/js/jquery-3.6.0.min.js"></script>
