@@ -111,6 +111,8 @@ $result = $conn->query($sql);
 		</style>
 		<script>
 		
+			screen.orientation.lock('landscape');
+		
 			function updateOnline() {
 
 				$
